@@ -18,7 +18,7 @@ body {
 
 /* NAVBAR */
 .navbar {
-  background: rgba(13, 110, 253, 0.75);
+  background: linear-gradient(120deg, #0fa712, #4b7bec);
   backdrop-filter: blur(12px);
 }
 
