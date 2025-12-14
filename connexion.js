@@ -18,3 +18,18 @@
     title.textContent = "Connexion";
     subtitle.textContent = "Accédez à votre compte";
   };
+  
+  
+
+  loginForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    // Simulation connexion OK
+    localStorage.setItem("isLoggedIn", "true");
+
+    window.location.href = "index.html";
+  });
+
+
+
+
