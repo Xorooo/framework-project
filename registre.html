@@ -33,16 +33,17 @@
 
     <h2>Créer un compte</h2>
     <p class="subtitle">Inscription sécurisée</p>
+    <div id="successMessage"></div>
 
     <form id="registerForm">
 
       <div class="form-floating mb-3">
-        <input type="text" class="form-control" required>
+        <input type="text" class="form-control" id="nom" required>
         <label>Nom</label>
       </div>
 
       <div class="form-floating mb-3">
-        <input type="text" class="form-control" required>
+        <input type="text" class="form-control" id="prenom" required>
         <label>Prénom</label>
       </div>
 
@@ -106,12 +107,12 @@
 
     <div class="login-link mt-3">
       Vous avez déjà un compte ?
-      <a href="login.html">Connectez-vous</a>
+      <a href="connexion.html">Connectez-vous</a>
     </div>
 
   </div>
 </section>
 
-<script src="auth.js"></script>
+<script src="registre.js"></script>
 </body>
 </html>
