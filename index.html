@@ -50,6 +50,7 @@ dans les pharmacies proches de chez vous, afin de gagner du temps et éviter les
         <a href="search.html" class="btn btn-light btn-lg mt-4 px-5 rounded-pill shadow">
           Commancer a chercher 
         </a>
+        <h3 id="welcomeMessage"></h3>
       </div>
 
       <!-- IMAGE -->
@@ -132,5 +133,28 @@ avec leurs informations essentielles.
   <small>Connectez-vous pour accéder à votre compte et gérer vos recherches de médicaments.</small>
 </footer>
 
+
+<!-- Dans index.html, ajoute où tu veux afficher le message -->
+<h2 id="welcomeMessage"></h2>
+
+<script>
+  // Lire les infos stockées
+  const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+  const nom = localStorage.getItem('userNom');
+  const prenom = localStorage.getItem('userPrenom');
+
+  // Afficher le message si connectée et si on a des infos
+  const welcomeEl = document.getElementById('welcomeMessage');
+  if (isLoggedIn && nom && prenom) {
+    welcomeEl.textContent = `Bienvenue ${nom} ${prenom}`;
+  } else {
+    // Optionnel: message par défaut ou masquer l'élément
+    welcomeEl.textContent = '';
+  }
+</script>
+
+
 </body>
+
+
 </html>
